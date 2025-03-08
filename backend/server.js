@@ -7,7 +7,14 @@ dotenv.config();
 
 console.log(process.env.MONGO_URI);
 
-console.log('changes made to branch2');
+console.log('changes from branch1');
+alert('changes from branch1');
+
+function add(a,b) {
+  return a+b;
+}
+
+add(3,5)
 
 app.listen(5000, () => {
   connectDB();
